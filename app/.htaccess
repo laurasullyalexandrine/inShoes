@@ -1,0 +1,2 @@
+# Avec cette directive, on indique à Apache d'interdier l'accès à ce repertoire d'ou le fichier dans le repertoire
+deny from all
