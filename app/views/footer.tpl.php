@@ -86,10 +86,10 @@
 2- on lui dit de qu'on veut parcourir l'objet quelle aura généré-->
             <?php // la méthode 'generate' d'AltoRouter permet à partir de l'identifiant de la route de générer l'url correspondante 
                   // Si l'url contient une partie dynamique on peut la préciser dans un tableau associatif fourni en 2ème argument
-            foreach($footerBrands as $brandObject): ?>
+            foreach($footerBrands as $brandObject):?>            
               <li> <a href="<?=$router->generate('catalog-brand', ['id' => $brandObject->getId()]) ?>" class="text-muted"><?=$brandObject->getName() ?></a></li>
             <?php endforeach; ?>
-
+            
             </ul>
           </div>
           <div class="col-lg-4">
